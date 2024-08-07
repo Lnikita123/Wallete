@@ -1,0 +1,252 @@
+/* src/App.css */
+.app-container {
+  text-align: center;
+  padding: 20px;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+}
+
+form input {
+  display: block;
+  margin: 10px 0;
+}
+
+form button {
+  margin: 10px 5px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 20px 0;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.poll-container {
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  max-width: 500px;
+  margin: 1rem auto;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.poll-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.poll-option {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.poll-option.selected {
+  border-color: #007bff;
+}
+
+.poll-option-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.poll-option-text {
+  font-size: 1rem;
+  flex-grow: 1;
+}
+
+.poll-option-votes {
+  font-size: 1rem;
+}
+
+.poll-results {
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.poll-result {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.poll-result-option {
+  font-size: 1rem;
+}
+
+.poll-result-percentage {
+  font-size: 1rem;
+}
+
+.avatar-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.avatar-selector label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.avatar-selector input[type="radio"] {
+  display: none;
+}
+
+.avatar-selector img {
+  width: 50px;
+  height: 50px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  transition: border 0.3s;
+}
+
+.avatar-selector input[type="radio"]:checked + img {
+  border-color: blue;
+}
+.poll-creator {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.poll-creator h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.poll-field {
+  margin-bottom: 15px;
+}
+
+.poll-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.poll-field input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.add-button,
+.submit-button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #052e16;
+  cursor: pointer;
+  text-align: center;
+}
+
+.add-button:hover,
+.submit-button:hover {
+  background-color: #052e16;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.signup-container,
+.login-container,
+.welcome-container,
+.poll-creator-container,
+.polls-container,
+.stats-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 10px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container h2,
+.login-container h2,
+.polls-container h2,
+.stats-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.signup-container input,
+.login-container input,
+.poll-creator-container input,
+.poll-creator-container select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.signup-container button,
+.login-container button,
+.poll-creator-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #007bff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.signup-container button:hover,
+.login-container button:hover,
+.poll-creator-container button:hover {
+  background-color: #0056b3;
+}
+
+.user-avatar {
+  vertical-align: middle;
+}
+
+.polls-container {
+  margin-top: 20px;
+}
+
+.poll-creator-container,
+.stats-container {
+  margin-top: 20px;
+}

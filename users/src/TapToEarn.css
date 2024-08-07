@@ -1,0 +1,36 @@
+.tap-to-earn-container {
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.tap-area {
+  cursor: pointer;
+  padding: 20px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  position: relative;
+}
+
+.emoji-animation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  animation: floatUp 1s ease-in-out infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 1;
+    bottom: 20px;
+  }
+  100% {
+    opacity: 0;
+    bottom: 100px;
+  }
+}
