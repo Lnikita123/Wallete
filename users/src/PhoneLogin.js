@@ -89,9 +89,7 @@ const PhoneLogin = () => {
                     </h2>
                 ) : (
                     <div className="flex flex-col gap-4 p-4 rounded-lg w-80">
-                        {/* <h1 className="mb-6 text-3xl font-medium leading-normal text-center text-white">
-                            Welcome to <br /> CODE A PROGRAM
-                        </h1> */}
+
                         {showOTP ? (
                             <>
                                 <div className="p-4 mx-auto bg-white rounded-full text-emerald-500 w-fit">
