@@ -6,6 +6,7 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
+import PhoneLogin from './PhoneLogin';
 
 const API_URL = 'http://localhost:5000';
 
@@ -184,13 +185,14 @@ const App = () => {
             placeholder="Username"
             required
           />
-          <input
+          {/* <input
             type="text"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             placeholder="Phone Number"
             required
-          />
+          /> */}
+          <PhoneLogin />
           <select onChange={(e) => setAvatar(e.target.value)} value={avatar}>
             <option value="logo.png">Default Avatar</option>
             <option value="A1.png">Avatar 1</option>
